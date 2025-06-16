@@ -1,12 +1,3 @@
-subway_analysis_app/
-├── app.py
-├── requirements.txt
-└── CARD_SUBWAY_MONTH_202505.csv
-
-streamlit
-pandas
-matplotlib
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
