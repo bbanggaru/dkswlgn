@@ -1,7 +1,4 @@
-streamlit
-pandas
-matplotlib
-
+pip install matpilotlib
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
