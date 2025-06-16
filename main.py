@@ -20,7 +20,7 @@ st.subheader("원본 데이터 샘플")
 st.dataframe(df.head())
 
 # 3. 전처리
-df['사용일자'] = pd.to_datetime(df['사용일자'], format="%Y%m%d")
+df['사용일자'] = pd.to_datetime(df['사용일자'], errors='coerce')  # format 제거 + 오류 무시
 df['요일'] = df['사용일자'].dt.day_name()
 df['총승하차'] = df['승차총승객수'] + df['하차총승객수']
 
