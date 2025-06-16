@@ -10,7 +10,7 @@ st.markdown("업로드된 CSV 데이터를 기반으로 역별, 노선별, 요�
 # 1. 데이터 불러오기
 @st.cache_data
 def load_data():
-    df = pd.read_csv("CARD_SUBWAY_MONTH_202505.csv", encoding="euc-kr")
+    df = pd.read_csv("CARD_SUBWAY_MONTH_202505.csv", encoding="utf-8")
     return df
 
 df = load_data()
